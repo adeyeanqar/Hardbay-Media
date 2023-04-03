@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #F3F3F3;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.menu i{
+    display: none;
+    font-size: 30px;
+    color: #3A0068;
+}
+
+.navlink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ .navlink ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+
+.navlink ul li a {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #3A0068;
+    text-decoration: none;
+}
+
+
+.navlink button { 
+    padding: 10px 15px;
+    border: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.navlink button:nth-child(2){
+    background-color: #00E2A2;
+    color: #ffffff;
+}
+
+.navlink button:nth-child(3){
+    background-color: #E2FFF7;
+    color: #00E2A2;
+}
+
+
+.social__links{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: auto;
+    background: #F8F8F8;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 10px;
+    top: 250px;
+    left: 10px;
+    gap: 5px;
+    z-index: 1000;
+}
+
+.social__links i{
+    font-size: 30px;
+    color: #3A0068;
+}
+
+
+.deborah{
+    position: relative;
+    top: 90px;
+    background: #3A0068;
+    background-image: url(../Images/Project/GLOWUP\ BEAUTY_2.jpg);
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    height: 70vh;
+    transform: scaleX(-1);
+}
+
+
+
+
+
+/* ---------------------------------------------- */
+
+.project__button{
+    position: relative;
+    top: 650px;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+
+}
+
+.project__button button{
+    padding: 20px 60px;
+    background: #00E2A2;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.footer{
+    position: relative;
+    top: 700px;
+    width: 100%;
+    height: auto;
+    background: #3A0068;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 50px 100px;
+    gap: 40px;
+}
+
+.footer .links{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr); /* sets 4 columns with equal width */
+    /* gap: -10px; */    
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    color: #fff;
+
+}
+
+.contact .address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.contact .address a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer h1{
+    font-size: 24px;
+}
+
+.footer h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.input input{
+    padding: 5px 10px;
+    border: 2px solid #5A5AAC;
+    border-radius: 5px;
+    outline: none;
+    width: 150px;
+    background: transparent;
+    color: #fff;
+}
+
+.input button{
+    padding: 5px 10px;
+    color: #3A0068;
+}
+
+.address p{
+    line-height: 30px;
+}
+
+.footer .copyright{
+    color: #fff;
+}

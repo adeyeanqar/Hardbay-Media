@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #F3F3F3;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.menu i{
+    display: none;
+    font-size: 30px;
+    color: #3A0068;
+}
+
+.navlink {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ .navlink ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+
+.navlink ul li a {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #3A0068;
+    text-decoration: none;
+}
+
+
+.navlink button { 
+    padding: 10px 15px;
+    border: none;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.navlink button:nth-child(2){
+    background-color: #00E2A2;
+    color: #ffffff;
+}
+
+.navlink button:nth-child(3){
+    background-color: #FEAF11;
+    color: #fff;
+}
+
+.body{
+    position: absolute;
+    width: 100%;
+    height: 87.8vh;
+    margin-top: 100px;
+    color: #F3F3F3;
+    background-image: url(../Images/What/ID\ CARD\ 5.jpg);
+    top: -20px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Avenir', sans-serif;
+}
+
+.body form{
+    padding: 20px;
+    width: 700px;
+    background: #3A0068;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.body form h1{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.name__tag{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.company__tag{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.title,
+.option{
+    width: 300px;
+    background: #fff;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.option{
+    padding: 10px 0;
+}
+
+.phone{
+    width: 60px;
+    border-right: 2px solid #C291EA;
+} 
+
+span{
+    padding: 15px 10px;
+    background: #C291EA;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 70%;
+    width: 30%;
+    border-radius: 10px 0 0 10px;
+} 
+
+input{
+    height: 100%;
+    width: 65%;
+    padding: 0 0 0 5px;
+    margin-left: -5px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.number{
+    width: 50%;
+}
+
+.product{
+    width: 60%;
+}
+
+
+select{
+    width: 70%;
+    margin-left: 0;
+    border: none;
+    outline: none;
+}
+
+
+.text span{
+    border-radius: 10px 10px 0 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    width: 70px;
+}
+
+.text textarea{
+    border-radius: 0 10px 10px 10px ;
+    border: none;
+    outline: none;
+    padding: 5px;
+    text-transform: capitalize;
+}
+
+.submit{
+    padding: 10px  20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #3A0068;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media (max-width: 920px){
+    /*----------- header ----------------------------*/
+    .logo img{
+        width: 200px
+    }
+
+    .menu i{
+        display: block;
+        font-size: 30px;
+    }
+
+    .navlink{
+        display: none;
+    }
+
+    .hide {
+        display: none;
+    }
+    
+    .menu i {
+        cursor: pointer;
+    }
+    
+    .menu i.hide {
+        display: none;
+    }
+    
+    .menu i.fa-bars.hide ~ i.fa-xmark {
+        display: block;
+    }
+
+    .navlink.show {
+        position: absolute;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        right: 20px;
+        width: 700px;
+        background: #fff;
+        padding: 10px;
+        border: 2px solid #3A0068;
+        height: auto;
+        height: 400px;
+        color: #fff;
+        border-radius: 20px;
+    }
+    .navlink ul {
+        flex-direction: column;
+        list-style: none;
+        gap: 40px;
+        display: flex;
+        margin: 0;
+        align-items: center;
+    }
+
+    .pic{
+        height: 50vh;
+    }
+
+    .button__pic .button{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*----------- header ----------------------------*/
+}
+
+
+@media (max-width: 540px){
+    .body form{
+        width: 500px;
+    }
+
+    .form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .body{
+        height: auto;
+        padding: 50px
+    }
+
+    .body form h1{
+        font-size: 16px;
+    }
+
+    .name__tag,
+    .company__tag{
+        gap: 30px;
+    }
+
+    .navlink.show{
+        width: 500px;
+    }
+}
+
+@media (max-width: 420px){
+    .navlink.show{
+        width: 350px;
+    }
+}
+
+
+
+

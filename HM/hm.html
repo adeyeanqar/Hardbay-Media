@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARDBAYMEDIA</title>
+    <link rel="stylesheet" href="./hm.css">
+    <link rel="shortcut icon" href="../Images/Logo/IMG_7076.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Images/Logo/HM LOGO 2251 x 581.png" alt="">
+        </div>
+
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark hide"></i>
+        </div>
+
+        <div class="navlink">
+            <ul>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">WHAT WE DO</a></li>
+                <li><a href="">PROJECTS</a></li>
+            </ul>
+
+            <button>Start a project</button>
+            <button>Print online</button>
+        </div>
+    </div>
+
+    <div class="body">
+        <form action="">
+            <h1>Shared thoughts will make us great again!</h1>
+            <div class="form">
+                <div class="name__tag">
+                    <div class="title">
+                        <span>First Name</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="title">
+                        <span>Last Name</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="option">
+                        <span >Country</span>
+                        <select>
+                            <option value="option1">Columbia</option>
+                            <option value="option2">Nigeria</option>
+                            <option value="option3">Ghana</option>
+                        </select>
+                    </div>
+
+                    <div class="title">
+                        <span>Adress</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="option">
+                        <span>Phone no</span>
+                        <select class="phone">
+                            <option value="option1">+234</option>
+                            <option value="option2">+456</option>
+                            <option value="option3">+555</option>
+                        </select>
+                        <input type="number" class="number">
+                    </div>
+
+                    <div class="title">
+                        <span>Email</span>
+                        <input type="email">
+                    </div>
+                </div>
+
+                <div class="company__tag">
+                    <div class="option">
+                        <span>Company</span>
+                        <select>
+                            <option value="option1">Small(1-5 members)</option>
+                            <option value="option2">big(10-20 members)</option>
+                            <option value="option3">Small(20-50 members)</option>
+                        </select>
+                    </div> 
+
+                    <div class="option">
+                        <span>Product type</span>
+                        <select class="product">
+                            <option value="option1">Product Design</option>
+                            <option value="option2">Web Design</option>
+                            <option value="option3">Branding</option>
+                        </select>
+                    </div>
+
+                    <div class="text">
+                        <span>Brief</span>
+                        <textarea name="" id="" cols="40" rows="6" placeholder="Type something..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit">submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        const menuButton = document.querySelector('.menu');
+        const navlink = document.querySelector('.navlink');
+        const menuBars = document.querySelector('.fa-bars');
+        const menuXMark = document.querySelector('.fa-xmark');
+
+        menuButton.addEventListener('click', () => {
+            navlink.classList.toggle('show');
+            menuBars.classList.toggle('hide');
+            menuXMark.classList.toggle('hide');
+        });
+    </script>
+    
+
+</body>
+</html>
