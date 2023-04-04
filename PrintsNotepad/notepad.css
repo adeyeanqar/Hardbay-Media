@@ -413,18 +413,22 @@ body{
     background-repeat: no-repeat;
 }
 
-.items__box .image__2{
-    background-image: url(../Images/jotter/BANNER\ 02.jpg);
+
+.items__box .image{
+    background: #fff;
     background-position: center;
     background-size: cover;
     border-radius: 10px;  
 }
 
+.items__box .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 .items__box .image__3{
-    background-image: url(../Images/jotter/ISP\ BAG.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;  
+background: #000;
 }
 
 .items__bottom{
@@ -491,15 +495,6 @@ body{
 }
 
 
-.image{
-    width: 100px;
-    height: 100px;
-    background-color: #000;
-    background-image: url(../Images/jotter/PAPER\ BAG\ V1.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-}
 
 .help__button{
     position: relative;
